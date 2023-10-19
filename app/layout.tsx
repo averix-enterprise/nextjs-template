@@ -1,22 +1,23 @@
-import './globals.css'
+import '../public/css/globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Roboto } from 'next/font/google'
+import { ReactElement, ReactNode } from 'react'
 
-const inter = Inter({ subsets: ['latin'] })
+const roboto = Roboto({ weight: '400' })
 
 export const metadata: Metadata = {
   title: 'NextJs Template',
   description: 'Official Averix NextJ Template',
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+type LayoutProps = {
+  children: ReactNode
+}
+
+export default function RootLayout({ children }: LayoutProps): ReactElement {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={roboto.className}>{children}</body>
     </html>
   )
 }
