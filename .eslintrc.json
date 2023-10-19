@@ -11,6 +11,7 @@
     "@typescript-eslint/block-spacing": "error",
     "@typescript-eslint/comma-spacing": "error",
     "@typescript-eslint/brace-style": "error",
+    "@typescript-eslint/consistent-type-definitions": "error",
     "no-trailing-spaces": "error"
   }
 }

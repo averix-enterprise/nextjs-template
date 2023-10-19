@@ -3,14 +3,14 @@ import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
 import { ReactElement, ReactNode } from 'react'
 
-const roboto = Roboto({ weight: '400' })
+const roboto = Roboto({ subsets: ['latin'], weight: '400' })
 
 export const metadata: Metadata = {
   title: 'NextJs Template',
   description: 'Official Averix NextJ Template',
 }
 
-type LayoutProps = {
+interface LayoutProps {
   children: ReactNode
 }
 
