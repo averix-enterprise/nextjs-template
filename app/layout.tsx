@@ -7,7 +7,7 @@ const roboto = Roboto({ subsets: ['latin'], weight: '400' })
 
 export const metadata: Metadata = {
   title: 'NextJs Template',
-  description: 'Official Averix NextJ Template',
+  description: 'Official Averix NextJS Template',
 }
 
 interface LayoutProps {
